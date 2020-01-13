@@ -1,0 +1,43 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+
+---
+
+spring:
+  profiles: dev
+  # JPA 설정
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  # 데이터베이스 설정
+  datasource:
+    url: jdbc:h2:file:./db/devdb;AUTO_SERVER=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  # H2 설정
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
+security.jwt.token:
+  secret_key: altiall-secret-key
+  expire_length: 86400000
+
+logging:
+  level:
+    com.example.demo: debug
+
+---
+
+spring:
+  profiles: qa
+
+---
+
+spring:
+  profiles: prod
