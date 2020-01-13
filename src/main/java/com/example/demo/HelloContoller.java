@@ -9,18 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.PostConstruct;
 
 @RestController
-@Slf4j
 public class HelloContoller {
-
-    @Autowired
-    JwtAuthProperties jwtAuthProperties;
-
-    @PostConstruct
-    public void init(){
-
-        log.debug(jwtAuthProperties.getSecretKey());
-        log.debug(jwtAuthProperties.getExpireLength() + "");
-    }
 
     @GetMapping("/api/hello")
     public String hello(){

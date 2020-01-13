@@ -37,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .httpBasic().disable()
             .authorizeRequests()
             .antMatchers("/h2/**/**").permitAll()
+            .antMatchers("/api/browser/**").permitAll()
             .antMatchers("/api/auth/signin").permitAll()
             .anyRequest().authenticated();
     }
@@ -44,6 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         //  UserDetailService 및 PasswordEncoder 지정
-        auth.userDetailsService(authorizeService).passwordEncoder(passwordEncoder());
+        auth.userDetailsService(authorizeService)
+                .passwordEncoder(passwordEncoder());
     }
 }
