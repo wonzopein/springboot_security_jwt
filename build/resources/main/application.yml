@@ -25,8 +25,8 @@ spring:
       path: /h2
 
 security.jwt.token:
-  secret_key: altiall-secret-key
-  access_token_expire: 86400000
+  secret_key: wonzopein-secret-key
+  access_token_expire: 5000 #86400000
   refresh_token_expire: 172800000
 
 logging:
