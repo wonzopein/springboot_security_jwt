@@ -12,7 +12,14 @@ public class JwtAuthProperties {
     public static final String TOKEN_HEADER = "Authorization";
     public static final String TOKEN_PREFIX = "Bearer";
 
+    //
+    //  암호화 키
     String secretKey;
-    long expireLength;
+    //
+    //  엑세스 토큰 허용시간
+    long accessTokenExpire;
+    //
+    //  갱신 토큰 허용시간
+    long refreshTokenExpire;
 
 }

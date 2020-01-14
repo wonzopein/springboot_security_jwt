@@ -11,10 +11,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    JwtAuthenticationFilter jwtAuthenticationFilter;
 
     @Autowired
     private AuthorizeService authorizeService;
@@ -34,12 +38,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             .and()
-            .httpBasic().disable()
-            .authorizeRequests()
-            .antMatchers("/h2/**/**").permitAll()
-            .antMatchers("/api/browser/**").permitAll()
-            .antMatchers("/api/auth/signin").permitAll()
-            .anyRequest().authenticated();
+                .httpBasic().disable()
+                .authorizeRequests()
+                .antMatchers("/h2/**/**").permitAll()
+                .antMatchers("/api/browser/**").permitAll()
+                .antMatchers("/api/auth/signin").permitAll()
+                .anyRequest().authenticated()
+            .and()
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
     @Override
