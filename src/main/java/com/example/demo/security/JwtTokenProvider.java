@@ -1,10 +1,7 @@
 package com.example.demo.security;
 
 import com.example.demo.properties.JwtAuthProperties;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -67,12 +64,29 @@ public class JwtTokenProvider {
     }
 
     public boolean validateToken(String token) {
+//        try {
+//            Jws<Claims> claims = Jwts.parser().setSigningKey(jwtAuthProperties.getSecretKey())
+//                                                .parseClaimsJws(token);
+//            return !claims.getBody().getExpiration().before(new Date());
+//        }catch (Exception e){
+//            return  false;
+//        }
+
         try {
-            Jws<Claims> claims = Jwts.parser().setSigningKey(jwtAuthProperties.getSecretKey())
-                                                .parseClaimsJws(token);
-            return !claims.getBody().getExpiration().before(new Date());
-        }catch (Exception e){
-            return  false;
+            Jws<Claims> claims = Jwts.parser()
+                    .setSigningKey(jwtAuthProperties.getSecretKey())
+                    .parseClaimsJws(token);
+            return true;
+        }catch (SignatureException ex) {
+            throw ex;
+        }catch (MalformedJwtException ex){
+            throw ex;
+        }catch (ExpiredJwtException ex){
+            throw ex;
+        } catch (UnsupportedJwtException ex) {
+            throw ex;
+        } catch (IllegalArgumentException ex) {
+            throw ex;
         }
     }
 }
