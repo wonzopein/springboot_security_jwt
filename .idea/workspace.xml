@@ -2,18 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc384ce1-be1a-489b-8127-f01666042127" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/member/MemberApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/member/MemberDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/HelloContoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/HelloContoller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/SpringbootSecurityJwtApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/SpringbootSecurityJwtApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member$MemberBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member$MemberBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/properties/JwtAuthProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/AuthorizeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/AuthorizeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/demo/SpringbootSecurityJwtApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/devdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/devdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/SpringbootSecurityJwtApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/SpringbootSecurityJwtApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/member/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/member/MemberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/member/MemberApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/JwtAuthProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtAuthProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/AuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/AuthorizeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtTokenProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +101,26 @@
       <recent name="com.example.demo.security" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Run - dev">
+    <configuration name="Clean" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Run - dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.SpringbootSecurityJwtApplication" />
@@ -90,6 +130,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.Clean" />
+      <item itemvalue="Spring Boot.Run - dev" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -153,10 +197,10 @@
       <screen x="58" y="23" width="2502" height="1417" />
     </state>
     <state x="1364" y="286" key="#Project_Structure/58.23.2502.1417@58.23.2502.1417" timestamp="1579096260147" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578903909410">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579152423965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578903909410" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579152423965" />
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1578903342918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -185,45 +229,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578979081242" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1578985076798">
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1579153057405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076798" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
     <state width="1536" height="333" key="GridCell.Tab.0.bottom/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1578985076798">
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1579153057405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076798" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
     <state width="1536" height="333" key="GridCell.Tab.0.center/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952966" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1578985076797">
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1579153057405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076797" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
     <state width="1536" height="333" key="GridCell.Tab.0.left/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952966" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1578985076798">
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1579153057405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076798" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
     <state width="1536" height="333" key="GridCell.Tab.0.right/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1578985076798">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1579153057406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076798" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057406" />
     <state width="1536" height="333" key="GridCell.Tab.1.bottom/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952968" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1578985076798">
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1579153057406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076798" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057406" />
     <state width="1536" height="333" key="GridCell.Tab.1.center/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1578985076798">
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1579153057405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076798" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
     <state width="1536" height="333" key="GridCell.Tab.1.left/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1578985076798">
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1579153057406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985076798" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057406" />
     <state width="1536" height="333" key="GridCell.Tab.1.right/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1578967629861">
       <screen x="0" y="0" width="1920" height="1040" />

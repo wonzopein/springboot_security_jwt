@@ -1,5 +1,6 @@
 package com.example.demo.security;
 
+import com.example.demo.security.jwt.JwtAuthenticationFilter;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

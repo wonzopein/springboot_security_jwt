@@ -1,10 +1,8 @@
 package com.example.demo.security;
 
-import com.example.demo.member.Member;
 import com.example.demo.member.MemberRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -21,7 +19,6 @@ public class AuthorizeService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        log.debug(new Date().toString());
         return memberRepository.findByUsername(username)
                 .orElseThrow(()->new UsernameNotFoundException(username+" not found."));
     }
