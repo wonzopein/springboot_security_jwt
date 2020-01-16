@@ -71,9 +71,10 @@ public class JwtTokenProvider {
     }
 
     public Authentication getAuthentication(String token){
+
+        //  TODO : API 호출할때마다 DB사용자 정보확인이 필요한경우가 아니라면, JWT 토큰에 필요한 정보를 넣고 사용해도 될듯?
         UserDetails userDetails = authorizeService.loadUserByUsername(getUsername(token));
         return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
-
 //        return new UsernamePasswordAuthenticationToken(getUsername(token), "", null);
     }
 
@@ -82,13 +83,6 @@ public class JwtTokenProvider {
     }
 
     public boolean validateToken(String token) throws JwtException {
-//        try {
-//            Jws<Claims> claims = Jwts.parser().setSigningKey(jwtAuthProperties.getSecretKey())
-//                                                .parseClaimsJws(token);
-//            return !claims.getBody().getExpiration().before(new Date());
-//        }catch (Exception e){
-//            return  false;
-//        }
 
         try {
             Jws<Claims> claims = Jwts.parser()
@@ -96,10 +90,13 @@ public class JwtTokenProvider {
                     .parseClaimsJws(token);
 
 
-                if(!claims.getBody().containsKey("type")
-                        || !claims.getBody().get("type").toString().equals("issue")){
-                    throw new UnsupportedJwtException("UnsupportedJwtException");
-                }
+            //  토큰유형(Issue/Refresh)에 따른 구분처리
+            //  ex) 갱신토큰(Refresh)으로 인증이 필요한 API 호출시 막기.
+            //      갱신토큰으로는 토큰 갱신만 할 수 있음.
+            if(!claims.getBody().containsKey("type")
+                    || !claims.getBody().get("type").toString().equals("issue")){
+                throw new UnsupportedJwtException("UnsupportedJwtException");
+            }
             return true;
         }catch (Exception ex){
             throw new JwtException(ex);
