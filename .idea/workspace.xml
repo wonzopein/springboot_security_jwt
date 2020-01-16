@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc384ce1-be1a-489b-8127-f01666042127" name="Default Changelist" comment="">
+    <list default="true" id="cc384ce1-be1a-489b-8127-f01666042127" name="Default Changelist" comment="멤버관리 조회,등록,수정,삭제 API 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/exception/JwtException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/HelloContoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/HelloContoller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/SpringbootSecurityJwtApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/SpringbootSecurityJwtApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member$MemberBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member$MemberBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/member/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/properties/JwtAuthProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/AuthorizeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/AuthorizeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/demo/SpringbootSecurityJwtApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/devdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/devdb.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloContoller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/SpringbootSecurityJwtApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/SpringbootSecurityJwtApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/member/MemberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/member/MemberApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/properties/JwtAuthProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtAuthProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/AuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/AuthorizeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtTokenProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/model/JwtResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,6 +151,7 @@
       <workItem from="1578925928549" duration="977000" />
       <workItem from="1578967944955" duration="499000" />
       <workItem from="1578977238208" duration="8939000" />
+      <workItem from="1579154394979" duration="5915000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1578967425555</created>
@@ -178,15 +167,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578968305293</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="멤버관리 조회,등록,수정,삭제 API 추가">
+      <created>1579153168420</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579153168420</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="멤버관리 조회,등록,수정,삭제 API 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="멤버관리 조회,등록,수정,삭제 API 추가" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1079" y="335" key="#Notifications" timestamp="1578923946432">
@@ -205,10 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578903342918" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1578965476145">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1579158007248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578965476144" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579158007248" />
     <state x="1438" y="487" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579096306392">
       <screen x="58" y="23" width="2502" height="1417" />
     </state>
@@ -221,53 +220,53 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="673" y="371" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578904942225" />
-    <state x="461" y="28" key="CommitChangelistDialog2" timestamp="1578985052173">
+    <state x="461" y="28" key="CommitChangelistDialog2" timestamp="1579161118212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="28" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578985052173" />
+    <state x="461" y="28" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161118212" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1578979081242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578979081242" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1579153057405">
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1579161051749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051749" />
     <state width="1536" height="333" key="GridCell.Tab.0.bottom/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1579153057405">
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1579161051748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051748" />
     <state width="1536" height="333" key="GridCell.Tab.0.center/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952966" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1579153057405">
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1579161051748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051748" />
     <state width="1536" height="333" key="GridCell.Tab.0.left/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952966" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1579153057405">
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1579161051748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051748" />
     <state width="1536" height="333" key="GridCell.Tab.0.right/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1579153057406">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1579161051750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057406" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051750" />
     <state width="1536" height="333" key="GridCell.Tab.1.bottom/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952968" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1579153057406">
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1579161051750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057406" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051750" />
     <state width="1536" height="333" key="GridCell.Tab.1.center/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1579153057405">
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1579161051749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057405" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051749" />
     <state width="1536" height="333" key="GridCell.Tab.1.left/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1579153057406">
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1579161051750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153057406" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161051750" />
     <state width="1536" height="333" key="GridCell.Tab.1.right/58.23.2502.1417@58.23.2502.1417" timestamp="1578926952967" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1578967629861">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -290,18 +289,18 @@
     </state>
     <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578901597174" />
     <state x="429" y="530" key="SettingsEditor/58.23.2502.1417@58.23.2502.1417" timestamp="1578926454053" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578968307150">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579153170519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578968307150" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153170519" />
     <state x="452" y="268" key="caller.chooser.dialog" timestamp="1578962514177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="268" key="caller.chooser.dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578962514177" />
-    <state x="652" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1578977251283">
+    <state x="652" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1579154452192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="652" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578977251283" />
+    <state x="652" y="344" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579154452192" />
     <state x="908" y="492" key="com.intellij.ide.util.TipDialog/58.23.2502.1417@58.23.2502.1417" timestamp="1578925928894" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578984129324">
       <screen x="0" y="0" width="1920" height="1040" />

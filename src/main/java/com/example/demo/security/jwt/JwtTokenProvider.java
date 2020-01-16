@@ -1,5 +1,6 @@
 package com.example.demo.security.jwt;
 
+import com.example.demo.exception.JwtException;
 import com.example.demo.security.AuthorizeService;
 import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,10 +28,11 @@ public class JwtTokenProvider {
      * @param roles
      * @return
      */
-    public String createToken(String username, List<String> roles){
+    public String tokenIssue(String username, List<String> roles){
 
         Claims claims = Jwts.claims().setSubject(username);
         claims.put("roles", roles);
+        claims.put("type", "issue");
         Date now = new Date();
 
 
@@ -41,6 +43,24 @@ public class JwtTokenProvider {
                 .signWith(SignatureAlgorithm.HS256, jwtAuthProperties.getSecretKey())
                 .compact();
     }
+
+    public String refreshTokenIssue(String username, List<String> roles){
+
+        Claims claims = Jwts.claims().setSubject(username);
+        claims.put("roles", roles);
+        claims.put("type", "refresh");
+        Date now = new Date();
+
+
+        return Jwts.builder()
+                .setClaims(claims)
+                .setIssuedAt(now)
+                .setExpiration(new Date(now.getTime() + jwtAuthProperties.getRefreshTokenExpire()))
+                .signWith(SignatureAlgorithm.HS256, jwtAuthProperties.getSecretKey())
+                .compact();
+    }
+
+
 
     public String getUsername(String token){
         return Jwts
@@ -61,7 +81,7 @@ public class JwtTokenProvider {
         return request.getHeader(JwtAuthProperties.TOKEN_HEADER);
     }
 
-    public boolean validateToken(String token) {
+    public boolean validateToken(String token) throws JwtException {
 //        try {
 //            Jws<Claims> claims = Jwts.parser().setSigningKey(jwtAuthProperties.getSecretKey())
 //                                                .parseClaimsJws(token);
@@ -74,17 +94,26 @@ public class JwtTokenProvider {
             Jws<Claims> claims = Jwts.parser()
                     .setSigningKey(jwtAuthProperties.getSecretKey())
                     .parseClaimsJws(token);
+
+
+                if(!claims.getBody().containsKey("type")
+                        || !claims.getBody().get("type").toString().equals("issue")){
+                    throw new UnsupportedJwtException("UnsupportedJwtException");
+                }
             return true;
-        }catch (SignatureException ex) {
-            throw ex;
-        }catch (MalformedJwtException ex){
-            throw ex;
-        }catch (ExpiredJwtException ex){
-            throw ex;
-        } catch (UnsupportedJwtException ex) {
-            throw ex;
-        } catch (IllegalArgumentException ex) {
-            throw ex;
+        }catch (Exception ex){
+            throw new JwtException(ex);
         }
+//        }catch (SignatureException ex) {
+//            throw new JwtException(ex.getMessage());
+//        }catch (MalformedJwtException ex){
+//            throw ex;
+//        }catch (ExpiredJwtException ex){
+//            throw ex;
+//        } catch (UnsupportedJwtException ex) {
+//            throw ex;
+//        } catch (IllegalArgumentException ex) {
+//            throw ex;
+//        }
     }
 }

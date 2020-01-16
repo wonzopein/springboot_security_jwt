@@ -55,7 +55,7 @@ public class HelloContoller {
         return "test!";
     }
 
-    @PostMapping("/api/auth/signin")
+    @PostMapping("/api/auth/token/issue")
     public ResponseEntity<?> singin(@RequestBody JwtRequest jwtRequest) throws Exception {
 
 
@@ -75,11 +75,39 @@ public class HelloContoller {
         }
 
         JwtResponse response = JwtResponse.builder()
-                .token(jwtTokenProvider.createToken(member.getUsername(), roles))
+                .token(jwtTokenProvider.tokenIssue(member.getUsername(), roles))
+                .refreshToken(jwtTokenProvider.refreshTokenIssue(member.getUsername(), roles))
                 .build();
 
         return new ResponseEntity(response, HttpStatus.OK);
 //        return jwtTokenProvider.createToken(member.getUsername(), roles);
+    }
+
+    @PostMapping("/api/auth/token/refresh")
+    public ResponseEntity<?> tokenRefresh(@RequestBody JwtRequest jwtRequest){
+        Member member = memberRepository.findByUsername(jwtRequest.getUsername())
+                .orElseThrow(()-> new UsernameNotFoundException("USER_NOT_FOUND"));
+
+        try{
+            jwtTokenProvider.validateToken(jwtRequest.getRefreshToken());
+
+            List<String> roles = new ArrayList<>();
+            if(member.getAuthorities() != null){
+                roles = member.getAuthorities().stream()
+                        .map(i->i.toString())
+                        .collect(Collectors.toList());
+            }
+
+            JwtResponse response = JwtResponse.builder()
+                    .token(jwtTokenProvider.tokenIssue(member.getUsername(), roles))
+                    .refreshToken(jwtTokenProvider.refreshTokenIssue(member.getUsername(), roles))
+                    .build();
+
+            return new ResponseEntity(response, HttpStatus.OK);
+
+        }catch (Exception ex){
+            return new ResponseEntity(ex.getMessage(), HttpStatus.FORBIDDEN);
+        }
     }
 
 }
