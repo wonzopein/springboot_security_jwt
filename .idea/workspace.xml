@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc384ce1-be1a-489b-8127-f01666042127" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/api/member/MemberApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,16 +13,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/HelloContoller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/HelloContoller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/demo/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/devdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/devdb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/api/auth/AuthTokenApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/api/auth/AuthTokenApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/api/member/MemberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/api/member/MemberApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/api/member/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/api/member/MemberDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/api/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/api/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/exception/JwtException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/exception/JwtException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/api/member/MemberApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/api/member/MemberApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,12 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -66,8 +70,8 @@
       <list>
         <option value="Interface" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -112,7 +116,7 @@
       <recent name="com.example.demo.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MemberApiTest.createMemberVoid">
+  <component name="RunManager" selected="Gradle.springboot_security_jwt [test]">
     <configuration name="Clean" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -132,64 +136,23 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MemberApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="springboot_security_jwt [test]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.demo.api.member.MemberApiTest&quot;" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
+            <option value="test" />
           </list>
         </option>
-        <option name="vmOptions" />
+        <option name="vmOptions" value="" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="MemberApiTest.createMember" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.demo.api.member.MemberApiTest.createMember&quot; --stacktrace" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="MemberApiTest.createMemberVoid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.demo.api.member.MemberApiTest.createMemberVoid&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="Run - dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -203,18 +166,9 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.Clean" />
-      <item itemvalue="Gradle.MemberApiTest" />
+      <item itemvalue="Gradle.springboot_security_jwt [test]" />
       <item itemvalue="Spring Boot.Run - dev" />
-      <item itemvalue="Gradle.MemberApiTest.createMember" />
-      <item itemvalue="Gradle.MemberApiTest.createMemberVoid" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.MemberApiTest.createMemberVoid" />
-        <item itemvalue="Gradle.MemberApiTest.createMember" />
-        <item itemvalue="Gradle.MemberApiTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -269,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579153168420</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="...">
+      <created>1579231454248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579231454248</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +241,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="." />
     <MESSAGE value="멤버관리 조회,등록,수정,삭제 API 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="멤버관리 조회,등록,수정,삭제 API 추가" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1079" y="335" key="#Notifications" timestamp="1578923946432">
@@ -291,10 +253,14 @@
       <screen x="58" y="23" width="2502" height="1417" />
     </state>
     <state x="1364" y="286" key="#Project_Structure/58.23.2502.1417@58.23.2502.1417" timestamp="1579096260147" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579230849445">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579236701799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579230849445" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579236701799" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579236951294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579236951294" />
     <state x="740" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1578903342918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,53 +289,53 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="673" y="371" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578904942225" />
-    <state x="461" y="28" key="CommitChangelistDialog2" timestamp="1579161118212">
+    <state x="461" y="28" key="CommitChangelistDialog2" timestamp="1579237218524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="28" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579161118212" />
+    <state x="461" y="28" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579237218524" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1578979081242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578979081242" />
-    <state width="1877" height="527" key="GridCell.Tab.0.bottom" timestamp="1579231347826">
+    <state width="1877" height="442" key="GridCell.Tab.0.bottom" timestamp="1579237150585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579231347826" />
+    <state width="1877" height="442" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579237150585" />
     <state width="2098" height="407" key="GridCell.Tab.0.bottom/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798681" />
-    <state width="1877" height="527" key="GridCell.Tab.0.center" timestamp="1579231347826">
+    <state width="1877" height="442" key="GridCell.Tab.0.center" timestamp="1579237150585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579231347826" />
+    <state width="1877" height="442" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579237150585" />
     <state width="2098" height="407" key="GridCell.Tab.0.center/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798680" />
-    <state width="1877" height="527" key="GridCell.Tab.0.left" timestamp="1579231347826">
+    <state width="1877" height="442" key="GridCell.Tab.0.left" timestamp="1579237150585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579231347826" />
+    <state width="1877" height="442" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579237150585" />
     <state width="2098" height="407" key="GridCell.Tab.0.left/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798680" />
-    <state width="1877" height="527" key="GridCell.Tab.0.right" timestamp="1579231347826">
+    <state width="1877" height="442" key="GridCell.Tab.0.right" timestamp="1579237150585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579231347826" />
+    <state width="1877" height="442" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579237150585" />
     <state width="2098" height="407" key="GridCell.Tab.0.right/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798680" />
-    <state width="1877" height="527" key="GridCell.Tab.1.bottom" timestamp="1579230713472">
+    <state width="1877" height="527" key="GridCell.Tab.1.bottom" timestamp="1579232023018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579230713472" />
+    <state width="1877" height="527" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579232023018" />
     <state width="2098" height="407" key="GridCell.Tab.1.bottom/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798681" />
-    <state width="1877" height="527" key="GridCell.Tab.1.center" timestamp="1579230713471">
+    <state width="1877" height="527" key="GridCell.Tab.1.center" timestamp="1579232023017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579230713471" />
+    <state width="1877" height="527" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579232023017" />
     <state width="2098" height="407" key="GridCell.Tab.1.center/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798681" />
-    <state width="1877" height="527" key="GridCell.Tab.1.left" timestamp="1579230713471">
+    <state width="1877" height="527" key="GridCell.Tab.1.left" timestamp="1579232023017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579230713471" />
+    <state width="1877" height="527" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579232023017" />
     <state width="2098" height="407" key="GridCell.Tab.1.left/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798681" />
-    <state width="1877" height="527" key="GridCell.Tab.1.right" timestamp="1579230713471">
+    <state width="1877" height="527" key="GridCell.Tab.1.right" timestamp="1579232023018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="527" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579230713471" />
+    <state width="1877" height="527" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579232023018" />
     <state width="2098" height="407" key="GridCell.Tab.1.right/58.23.2502.1417@58.23.2502.1417" timestamp="1579183798681" />
     <state width="2098" height="500" key="GridCell.Tab.2.bottom" timestamp="1579183553172">
       <screen x="58" y="23" width="2502" height="1417" />
@@ -396,10 +362,10 @@
     </state>
     <state x="461" y="162" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578901597174" />
     <state x="429" y="530" key="SettingsEditor/58.23.2502.1417@58.23.2502.1417" timestamp="1578926454053" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579153170519">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579231465435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579153170519" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579231465435" />
     <state x="452" y="268" key="caller.chooser.dialog" timestamp="1578962514177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -421,6 +387,10 @@
       <screen x="58" y="23" width="2502" height="1417" />
     </state>
     <state x="513" y="127" width="1940" height="1213" key="dock-window-2/58.23.2502.1417@58.23.2502.1417" timestamp="1579183547158" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1579236647760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579236647760" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578984129324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -10,10 +10,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.Convert;
-import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/members")
@@ -51,12 +48,12 @@ public class MemberApi {
      * @return
      */
     @GetMapping("/{username}")
-    public MemberDto.Get getMember(@PathVariable("username") String username){
+    public ResponseEntity getMember(@PathVariable("username") String username){
         //  멤버 조회
         Member member = memberRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException(""));
         //  멤버 조회형태로 변환
         MemberDto.Get memberGet = modelMapper.map(member, MemberDto.Get.class);
-        return memberGet;
+        return new ResponseEntity(memberGet, HttpStatus.OK);
     }
 
     /**
