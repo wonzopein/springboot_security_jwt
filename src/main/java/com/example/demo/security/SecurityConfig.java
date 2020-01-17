@@ -50,6 +50,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic().disable()
                 .authorizeRequests()
                 .antMatchers("/h2/**/**").permitAll()
+                .antMatchers("/api/**/**").permitAll()
                 .antMatchers("/api/browser/**").permitAll()
                 .antMatchers("/api/auth/token/issue").permitAll()
                 .antMatchers("/api/auth/token/refresh").permitAll()

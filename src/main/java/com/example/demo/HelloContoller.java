@@ -8,6 +8,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
 
 @RestController
 @Slf4j
@@ -21,13 +24,13 @@ public class HelloContoller {
 
     @PostConstruct
     public void init(){
-        Member member = Member.builder()
-                        .username("wonzopein")
-                        .password(passwordEncoder.encode("1"))
-                        .name("오승현")
-                        .build();
 
-        memberRepository.save(member);
+        List<Member> members = new ArrayList<>();
+        IntStream.range(0, 30).forEach(i->{
+            members.add(Member.builder().username(i+"wonzopein").password(passwordEncoder.encode("1")).name("오승현" + i).build());
+        });
+
+        memberRepository.saveAll(members);
     }
 
 

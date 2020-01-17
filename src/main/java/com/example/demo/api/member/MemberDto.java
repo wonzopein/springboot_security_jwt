@@ -9,23 +9,23 @@ public class MemberDto {
     @NoArgsConstructor
     @Data
     static class Join {
-        String username;
-        String password;
-        String name;
+        private String username;
+        private String password;
+        private String name;
     }
 
     @NoArgsConstructor
     @Data
     static class Get {
-        String username;
-        String name;
+        private String username;
+        private String name;
     }
 
     @NoArgsConstructor
     @Data
     static class Put {
-        String username;
-        String name;
+        private String username;
+        private String name;
     }
 
 }

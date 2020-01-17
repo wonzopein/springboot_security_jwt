@@ -2,11 +2,17 @@ package com.example.demo.api.member;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.Convert;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @RestController
@@ -16,7 +22,9 @@ public class MemberApi {
     @Autowired
     MemberRepository memberRepository;
 
-    @Autowired ModelMapper modelMapper;
+    @Autowired
+    ModelMapper modelMapper;
+
     @Autowired
     PasswordEncoder passwordEncoder;
 
@@ -26,14 +34,15 @@ public class MemberApi {
      * @return
      */
     @PostMapping("")
-    public MemberDto.Get createMember(@RequestBody MemberDto.Join memberJoin){
+    public ResponseEntity createMember(@RequestBody MemberDto.Join memberJoin){
         //  멤버 저장
         Member memberEnity = modelMapper.map(memberJoin, Member.class);
         memberEnity.setPassword(passwordEncoder.encode(memberEnity.getPassword()));
         memberEnity = memberRepository.save(memberEnity);
         //  멤버 변환
         MemberDto.Get member = modelMapper.map(memberEnity, MemberDto.Get.class);
-        return member;
+
+        return new ResponseEntity(member, HttpStatus.CREATED);
     }
 
     /**
@@ -55,12 +64,15 @@ public class MemberApi {
      * @return
      */
     @GetMapping("")
-    public List<MemberDto.Get> getAllMembers(){
+    public Page<MemberDto.Get> getAllMembers(Pageable pageable){
 
-        List<Member> memberRepositoryAll = memberRepository.findAll();
-        List<MemberDto.Get> members = memberRepositoryAll.stream()
-                                            .map(member->modelMapper.map(member, MemberDto.Get.class))
-                                            .collect(Collectors.toList());
+        Page<Member> memberEntity = memberRepository.findAll(pageable);
+        Page<MemberDto.Get> members = memberEntity.map(new Function<Member, MemberDto.Get>() {
+            @Override
+            public MemberDto.Get apply(Member member) {
+                return modelMapper.map(member, MemberDto.Get.class);
+            }
+        });
         return members;
     }
 
