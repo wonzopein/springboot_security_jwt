@@ -41,6 +41,31 @@ logging:
 ---
 
 spring:
+  profiles: dev1
+  # JPA 설정
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  # 데이터베이스 설정
+  datasource:
+    url:  jdbc:mysql://localhost:32798/sb_test
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+security.jwt.token:
+  secret_key: wonzopein-secret-key
+  access_token_expire: 86400000 #86400000
+  refresh_token_expire: 172800000
+
+logging:
+  level:
+    com.example.demo: debug
+
+---
+
+spring:
   profiles: qa
 
 ---
